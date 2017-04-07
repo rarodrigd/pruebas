@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>Página editable con ejemplo del CKEditor</title>
+    <script src="../../ckeditor/ckeditor.js"></script>
+  </head>
+  <body>
+    <form method="post">
+      <p>
+        Mi editor:<br>
+        <textarea name="editor1" id="editor1">&lt;p&gt;Contenido inicial del editor.&lt;/p&gt;</textarea>
+        <script>CKEDITOR.replace('editor1', {customConfig:'../../pruebas/editor-texto/mi_config.js'});</script>
+      </p>
+      <p><input type="submit"></p>
+    </form>
+  </body>
+</html>

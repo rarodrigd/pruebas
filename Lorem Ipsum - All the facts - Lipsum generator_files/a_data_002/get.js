@@ -1,0 +1,2 @@
+{var dz=document;
+dz.writeln("<a href=\"http://media.fastclick.net/w/click.here?delivery=fastclick.com&sid=14064&sdid=54068&m=1&c=0\" target=\"_blank\"><img src=\"http://www.lipsum.com/banners/101.gif\" border=0 width=728 height=90></a>");}

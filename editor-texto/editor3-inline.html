@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>Página editable con ejemplo del CKEditor</title>
+    <script src="../../ckeditor/ckeditor.js"></script>
+  </head>
+  <body>
+    <div id="editor1" contenteditable="true" style="margin-top:10px;width:500px;">
+        <h1>Edición InLine en Acción</h1>
+        <P>El elemento div que contiene este texto ahora es editable</p>
+    </div>
+    <div id="editor2" contenteditable="true" style="margin-top:10px;width:500px;margin-left:600px;border-style:thin;">
+      <h1>Segundo div editable</h1>
+      <p>
+        Este es el segundo div editable automatico.
+      </p>
+    </div>
+    <script>
+      CKEDITOR.disableAutoInline = true;
+      CKEDITOR.inline( 'editor1', {customConfig:'../../pruebas/editor-texto/mi_config.js'});
+      CKEDITOR.inline( 'editor2', {customConfig:'../../pruebas/editor-texto/mi_config.js'});
+    </script>
+  </body>
+</html>

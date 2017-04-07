@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Página modificable de prueba</title>
+    <link rel="stylesheet" type="text/css" href="../content-tools/content-tools.min.css">
+    <link href='estilos.css' rel='stylesheet' type='text/css'>
+
+    <style>
+      .author {
+        font-style: italic;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+
+    <article>
+      <div data-editable data-name="encabezado">
+        <h1>Página editable de prueba</h1>
+      </div>
+
+      <div data-editable data-name="main-content">
+        <blockquote>
+          Siempre codifica como si la persona que da mantenimiento final a tu código
+          es un psicópata violento que sabe donde vives.
+        </blockquote>
+        <p>John F. Woods</p>
+      </div>
+    <article>
+
+    <script src="../content-tools/content-tools.js"></script>
+    <script src="../content-tools/editor.js"></script>
+  </body>
+</html>

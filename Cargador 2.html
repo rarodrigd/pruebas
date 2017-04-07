@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery load() Demo</title>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        
+        <script type="text/javascript">
+            var pagina = 1;
+            $(document).ready(function()
+            {
+                $("button").click(function()
+                {
+                    // $("#box:last").load("prueba-carga-1.html");
+                    $.get("prueba-carga-"+pagina,
+                        function(data){
+                            if (data != "") {
+                            $(".box:last").after(data); 
+                            }
+                        });
+                    pagina++;
+                 });
+             });
+        </script>
+    </head>
+    <body>
+        <h2>Haz clic en el botón para cargar contenido en la caja DIV</h2>
+        <div class="box">
+            Carga aquí contenido...
+        </div>
+        <button type="button">Cargar contenido</button>
+    </body>
+</html>
